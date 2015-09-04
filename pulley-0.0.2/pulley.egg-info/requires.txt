@@ -1,0 +1,8 @@
+numpy
+pandas
+swigibpy
+psycopg2
+tzlocal
+django
+celery
+django-celery

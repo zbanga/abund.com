@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pulley
+Version: 0.0.2
+Summary: Live trading with zipline and swigibpy via Interactive Brokers.
+Home-page: https://github.com/jgoode21/pulley.git
+Author: Jimmie Goode
+Author-email: jimmie@goodeanalytics.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
