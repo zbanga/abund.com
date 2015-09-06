@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4c0ded91-dbb9-41ba-8802-e89214347e82}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>hello.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="abund.html" />
+    <Content Include="index.html" />
+    <Content Include="pulley-0.0.2\pulley.egg-info\dependency_links.txt" />
+    <Content Include="pulley-0.0.2\pulley.egg-info\requires.txt" />
+    <Content Include="pulley-0.0.2\pulley.egg-info\SOURCES.txt" />
+    <Content Include="pulley-0.0.2\pulley.egg-info\top_level.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="hello.py" />
+    <Compile Include="pulley-0.0.2\pulley\algos\event_trader.py" />
+    <Compile Include="pulley-0.0.2\pulley\algos\olmar.py" />
+    <Compile Include="pulley-0.0.2\pulley\algos\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\brokers\broker.py" />
+    <Compile Include="pulley-0.0.2\pulley\brokers\ib\broker.py" />
+    <Compile Include="pulley-0.0.2\pulley\brokers\ib\tws.py" />
+    <Compile Include="pulley-0.0.2\pulley\brokers\ib\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\brokers\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\calendar\date_utils.py" />
+    <Compile Include="pulley-0.0.2\pulley\calendar\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\reporting\dj.py" />
+    <Compile Include="pulley-0.0.2\pulley\reporting\report.py" />
+    <Compile Include="pulley-0.0.2\pulley\reporting\yoy_metrics.py" />
+    <Compile Include="pulley-0.0.2\pulley\reporting\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\trading.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\finance\commission.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\finance\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\csi.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\quant_quote.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\query_source.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\redshift.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\splits_and_divs.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\yahoo.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\sources\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\zp\__init__.py" />
+    <Compile Include="pulley-0.0.2\pulley\__init__.py" />
+    <Compile Include="pulley-0.0.2\setup.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pulley-0.0.2" />
+    <Folder Include="pulley-0.0.2\pulley" />
+    <Folder Include="pulley-0.0.2\pulley.egg-info" />
+    <Folder Include="pulley-0.0.2\pulley\algos" />
+    <Folder Include="pulley-0.0.2\pulley\brokers" />
+    <Folder Include="pulley-0.0.2\pulley\brokers\ib" />
+    <Folder Include="pulley-0.0.2\pulley\calendar" />
+    <Folder Include="pulley-0.0.2\pulley\reporting" />
+    <Folder Include="pulley-0.0.2\pulley\zp" />
+    <Folder Include="pulley-0.0.2\pulley\zp\finance" />
+    <Folder Include="pulley-0.0.2\pulley\zp\sources" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

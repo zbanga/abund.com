@@ -1,1 +1,2 @@
 zipline
+D:\\home\\site\\wwwroot\\numpy-1.10.0b1+mkl-cp27-none-win32.whl
